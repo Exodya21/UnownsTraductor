@@ -4,13 +4,116 @@
   background-size: cover;
   background-position-x: center;
 
+  width: 100%;
   height: 100vh;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 
 .container h1 {
   font-size: 3rem;
   margin-top: 1rem;
+  text-align: center;
+}
+.container section {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  
+  width: 100%;
+  height: 100%;
+  
+  margin-top: 3rem;
+}
+@media (max-width: 1000px) {
+  .container section {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 0;
+  }
+}
+
+.gifs {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content min-content min-content min-content ;
+}
+@media (max-width: 700px) {
+  .gifs {
+    grid-template-columns: min-content min-content min-content min-content min-content min-content ;
+  }
+}
+@media (max-width: 600px) {
+  .gifs {
+    grid-template-columns: min-content min-content min-content min-content min-content ;
+  }
+}
+@media (max-width: 500px) {
+  .gifs {
+    grid-template-columns: min-content min-content min-content min-content ;
+  }
+}
+@media (max-width: 400px) {
+  .gifs {
+    grid-template-columns: min-content min-content min-content ;
+  }
+}
+
+.unown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unown p {
+  /* border-bottom: 1px solid black; */
+  text-align: center;
+  font-weight: bolder;
+}
+.unown img {
+  padding: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form h2 {
+  text-align: center;
+  font-size: 1.75rem;
+}
+form textarea {
+  resize: none;
+  
+  width: 90%;
+  padding: 0.5rem;
+}
+form button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem;
+
+  background: transparent;
+  border-radius: 10px;
+  border: 4px solid rgb(26, 30, 55);
+}
+
+
+
+footer {
+  width: 100%;
+  margin: 0.5rem 0 ;
+
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  margin-right: 5px;
 }
