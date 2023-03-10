@@ -9,6 +9,13 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerFlex {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
@@ -16,7 +23,7 @@
 
 .container h1 {
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .container section {
@@ -116,4 +123,18 @@ footer {
 }
 footer p {
   margin-right: 5px;
+}
+
+
+
+.containerRes {
+  display: inline-block;
+}
+
+.containerRes header {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  
 }
