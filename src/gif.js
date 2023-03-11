@@ -26,6 +26,7 @@ import y from "./asets/unown-y.gif";
 import z from "./asets/unown-z.gif";
 import question from "./asets/unown-question.gif";
 import exclamation from "./asets/unown-exclamation.gif";
+import whitespace from "./asets/unown-whitespace.png"
 
 
 
@@ -71,7 +72,7 @@ export const unowns = [
         img : h
     },
     {
-        char : "i",
+        char : "I",
         name : "unown-i",
         img : i
     },
@@ -169,5 +170,10 @@ export const unowns = [
         char : "!",
         name : "unown-exclamation",
         img : exclamation
+    },
+    {
+        char : " ",
+        name : " ",
+        img : whitespace
     }
 ]

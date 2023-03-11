@@ -8,9 +8,15 @@ export function unownsFilter(query) {
     console.log(queryToArray);
 
     queryToArray.forEach( char => {
-        unownsFiltredArray.push( unowns.filter( unown =>  unown.char.toLocaleLowerCase() === char ) )
+        unownsFiltredArray.push(
+            getUnown(char)
+        )
     })
 
     console.log(unownsFiltredArray);
     return unownsFiltredArray
+}
+
+const getUnown = (char) => {
+    return unowns.find(unown => unown.char === char)
 }

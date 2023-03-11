@@ -1,5 +1,7 @@
 const getRandomInt = (max) => {
-    return Math.floor(Math.random() * max);
+    let num = Math.floor(Math.random() * max)
+    if ( num > 0 ) return num
+    return 1
 }
 
 export const animations = [
@@ -31,8 +33,8 @@ export const animations = [
     // `animate__animated animate__lightSpeedOutRight  animate__delay-${getRandomInt(3)}s`,
     // `animate__animated animate__lightSpeedOutLeft  animate__delay-${getRandomInt(3)}s`,
 
-    `animate__animated animate__rollIn  animate__delay-${getRandomInt(3)}s`,
-    `animate__animated animate__rollOut  animate__delay-${getRandomInt(3)}s`,
+    // `animate__animated animate__rollIn  animate__delay-${getRandomInt(3)}s`,
+    // `animate__animated animate__rollOut  animate__delay-${getRandomInt(3)}s`,
 
     `animate__animated animate__zoomIn  animate__delay-${getRandomInt(3)}s`,
     `animate__animated animate__zoomInDown  animate__delay-${getRandomInt(3)}s`,

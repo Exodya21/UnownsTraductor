@@ -2,30 +2,26 @@ import { useState } from 'react';
 import './App.css';
 import 'animate.css';
 import { unowns } from "./gif";
-import { security } from './security';
-import { unownsFilter } from './unownsFilter';
 import { Mesage } from './Mesage'
 
 function App() {
 
   const [query, setQuery] = useState("");
   const [state, setState] = useState(true);
-  const [unownsFiltred, setUnowns] = useState([])
 
   const onSubmit = (e) => {
     e.preventDefault()
 
     console.log(query)
-    
-    setUnowns( unownsFilter(security(query)) )
 
     setState(false)
   }
 
   return (
-    <div className="container">
+    <div>
     {
       state?
+      <div className="container">
         <div className="containerFlex animate__animated animate__fadeIn">
           <h1>¡Conoce a los Unowns!</h1>
           <section>
@@ -58,28 +54,15 @@ function App() {
             <a href="https://imgur.com/a/WXSvn#uD39I8E">imgur</a>
           </footer>
         </div>
+      </div>      
       :
-        // <div className="containerRes">
-        //   <header>
-        //     <button className="animate__animated animate__fadeIn" onClick={() => setState(true)} > back </button>
-        //   </header>
-          
-        //   <div className="animate__animated animate__fadeIn">
-        //   {
-        //     unownsFiltred?.map( unown => (
-        //       <div  className={css + animations[getRandomInt(animations.length-1)]}>
-        //         <img src={unown.img} alt={unown.name}></img>
-        //       </div>
-        //     ))  
-        //   }
-        //   </div>
-        // </div>
         <Mesage
-              setState={setState}
-              unownsFiltred={unownsFiltred}
+          setState={setState}
+          query={query}
         />
     }
     </div>
+    
   );
 }
 

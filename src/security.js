@@ -1,5 +1,5 @@
-// const validations = "qwertyuiopasdfghjklzxcvbnm?! "
-const validations = "qwertyuiopasdfghjklzxcvbnm?!"
+const validations = "qwertyuiopasdfghjklzxcvbnm?! "
+// const validations = "qwertyuiopasdfghjklzxcvbnm?!"
 
 let sinDiacriticos = (function(){
     let de = 'ÁÃÀÄÂÉËÈÊÍÏÌÎÓÖÒÔÚÜÙÛÑÇáãàäâéëèêíïìîóöòôúüùûñç',
@@ -28,5 +28,5 @@ export function security(query) {
     })
 
     console.log(queryValidated)
-    return queryValidated
+    return queryValidated.toUpperCase()
 }

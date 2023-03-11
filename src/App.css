@@ -12,6 +12,13 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width:600px) {
+  .container {
+    height: 100%;
+  }
+}
+
+
 
 .containerFlex {
   display: flex;
@@ -30,18 +37,22 @@
   display: flex;
   justify-content: space-around;
   align-items: start;
-  
+
   width: 100%;
   height: 100%;
-  
+
   margin-top: 3rem;
 }
 @media (max-width: 1000px) {
   .container section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 
     margin-top: 0;
+  }
+
+  form {
+    margin: 0 1rem 2rem
   }
 }
 
@@ -95,7 +106,7 @@ form h2 {
 }
 form textarea {
   resize: none;
-  
+
   width: 90%;
   padding: 0.5rem;
 }
@@ -125,10 +136,32 @@ footer p {
   margin-right: 5px;
 }
 
-
-
 .containerRes {
-  display: inline-block;
+  background-image: url("./asets/ruina-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+.containerRes1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+
+  padding: 1.5rem 0.5rem 0;
 }
 
 .containerRes header {
@@ -136,5 +169,32 @@ footer p {
   top: 1rem;
   left: 1rem;
   width: 100%;
-  
 }
+
+h2 {
+  font-size: 2rem;
+  margin:0 2rem ;
+}
+
+small {
+  margin-bottom: 4rem ;
+}
+
+.flexUnowns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div[atrr=" "] {
+  background-color: transparent;
+  width: 5rem;
+}
+
+
+
+#unowns img {
+  padding: 0% 1.5rem;
+  margin-bottom: 2rem;
+  scale: 1.7;
+} 
