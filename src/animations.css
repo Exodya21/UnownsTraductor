@@ -42,7 +42,7 @@
     align-items: end ;
     /* -moz-animation: slider 5s infinite linear;
     -webkit-animation: slider 5s infinite linear; */
-    animation: slider3 15s infinite linear;
+    animation: slider3 20s infinite linear;
     width: 100%;
     height: 50vh;
 }
@@ -82,34 +82,34 @@
         transform: translate(0%, 0%);
     }
     10% {
-        transform: translate(-10%, -40%);
+        transform: translate( -10%, -20%);
     }
     20% {
-        transform: translate(-20%, -80%);
+        transform: translate( -20%, -40%);
     }
     30% {
-        transform: translate(-30%, -120%);
+        transform: translate( -30%, -60%);
     }
     40% {
-        transform: translate(-40%, -160%);
+        transform: translate( -40%, -80%);
     }
     50% {
-        transform: translate(-50%, -200%);
+        transform: translate( -50%, -100%);
     }
     60% {
-        transform: translate(-60%, -240%);
+        transform: translate( -60%, -120%);
     }
     70% {
-        transform: translate(-70%, -280%);
+        transform: translate( -70%, -140%);
     }
     80% {
-        transform: translate(-80%, -320%);
+        transform: translate( -80%, -160%);
     }
     90% {
-        transform: translate(-90%, -360%);
+        transform: translate( -90%, -180%);
     }
     100% {
-        transform: translate(-110%, -400%);
+        transform: translate( -100%, -200%);
 
     }
 }
