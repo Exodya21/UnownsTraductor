@@ -3,6 +3,9 @@ import './App.css';
 import 'animate.css';
 import { unowns } from "./gif";
 import { Mesage } from './Mesage'
+import { Slider } from './Slider'
+import { Slider2 } from './Slider2';
+import { Slider3 } from './Slider3';
 
 function App() {
 
@@ -17,12 +20,19 @@ function App() {
     setState(false)
   }
 
+  if (unowns.length === 29) unowns.pop()
+
   return (
     <div>
     {
       state?
       <div className="container">
         <div className="containerFlex animate__animated animate__fadeIn">
+
+          <Slider />
+          <Slider2 />
+          <Slider3 />
+
           <h1>¡Conoce a los Unowns!</h1>
           <section>
 

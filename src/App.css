@@ -5,16 +5,22 @@
   background-position-x: center;
 
   width: 100%;
-  height: 100vh;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-@media (max-width:600px) {
+@media (max-height:766px) and ( min-width:1000px) {
   .container {
-    height: 100%;
+    height: 100vh;
+  }
+}
+
+@media (min-height:766px) {
+  .container {
+    height: 100vh;
   }
 }
 
@@ -23,16 +29,20 @@
 .containerFlex {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
+
+  height: 100%;
 }
 
 
 .container h1 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin: 3rem 0 2rem;
   text-align: center;
 }
+
+
 .container section {
   display: flex;
   justify-content: space-around;
@@ -104,11 +114,24 @@ form h2 {
   text-align: center;
   font-size: 1.75rem;
 }
+@media (max-width: 750px) {
+  .containerRes h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .containerRes h2 {
+    width: 60%;
+  }
+}
+
 form textarea {
   resize: none;
 
   width: 90%;
   padding: 0.5rem;
+
+  border-radius: 5px;
 }
 form button {
   margin-top: 0.5rem;
@@ -121,6 +144,8 @@ form button {
   background: transparent;
   border-radius: 10px;
   border: 4px solid rgb(26, 30, 55);
+
+  cursor: pointer;
 }
 
 
@@ -150,7 +175,7 @@ footer p {
   width: 100%;
   height: 100vh;
 
-
+  overflow-x: none;
 }
 
 .containerRes1 {
@@ -171,13 +196,29 @@ footer p {
   width: 100%;
 }
 
+header button{
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem;
+
+  background: transparent;
+  border-radius: 10px;
+  border: 4px solid rgb(26, 30, 55);
+
+  cursor: pointer;
+}
+
 h2 {
   font-size: 2rem;
-  margin:0 2rem ;
+  margin: 0 2rem ;
 }
 
 small {
-  margin-bottom: 4rem ;
+  margin: 0 2rem 4rem ;
+  text-align: center;
 }
 
 .flexUnowns {

@@ -1,0 +1,115 @@
+.container-slider {
+    /* overflow-wrap: break-word; */
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.slider {
+    position: absolute;
+    top: 44vh;
+    z-index: -1;
+
+    display: inline-flex;
+    justify-content: end;
+    /* -moz-animation: slider 5s infinite linear;
+    -webkit-animation: slider 5s infinite linear; */
+    animation: slider 15s infinite linear;
+    width: 90%;
+}
+.slider2 {
+    position: absolute;
+    left: 0;
+    bottom: 1vh;
+    z-index: -1;
+
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: end;
+    /* -moz-animation: slider 5s infinite linear;
+    -webkit-animation: slider 5s infinite linear; */
+    animation: slider2 12s infinite linear;
+    width: 50%;
+    height: 50vh;
+}
+.slider3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    display: inline-flex;
+    justify-content: end;
+    align-items: end ;
+    /* -moz-animation: slider 5s infinite linear;
+    -webkit-animation: slider 5s infinite linear; */
+    animation: slider3 15s infinite linear;
+    width: 100%;
+    height: 50vh;
+}
+
+
+.slider div {
+    scale: 0.7;
+}
+.slide {
+    filter: blur(3px);
+    scale: 0.9;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+@keyframes slider {
+    from {
+        transform: translateX(9%);
+    }
+    to {
+        transform: translateX(-105%);
+    }
+}
+@keyframes slider2 {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform: translate(100%, -195%);
+
+    }
+}
+@keyframes slider3 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    10% {
+        transform: translate(-10%, -40%);
+    }
+    20% {
+        transform: translate(-20%, -80%);
+    }
+    30% {
+        transform: translate(-30%, -120%);
+    }
+    40% {
+        transform: translate(-40%, -160%);
+    }
+    50% {
+        transform: translate(-50%, -200%);
+    }
+    60% {
+        transform: translate(-60%, -240%);
+    }
+    70% {
+        transform: translate(-70%, -280%);
+    }
+    80% {
+        transform: translate(-80%, -320%);
+    }
+    90% {
+        transform: translate(-90%, -360%);
+    }
+    100% {
+        transform: translate(-110%, -400%);
+
+    }
+}
