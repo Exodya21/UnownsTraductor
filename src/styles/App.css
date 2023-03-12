@@ -1,5 +1,5 @@
 .container {
-  background-image: url("./asets/ruina-bg.png");
+  background-image: url("../asets/ruina-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -162,7 +162,7 @@ footer p {
 }
 
 .containerRes {
-  background-image: url("./asets/ruina-bg.png");
+  background-image: url("../asets/ruina-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;

@@ -1,8 +1,8 @@
-import { animations } from './gifAnimationCSS';
-import './App.css';
+import { animations } from '../dataBases/gifAnimationCSS';
+import '../styles/App.css';
 import 'animate.css';
-import { security } from './security';
-import { unownsFilter } from './unownsFilter';
+import { security } from '../scripts/security';
+import { unownsFilter } from '../scripts/unownsFilter';
 
 export function Mesage( { setState, query } ) {
 

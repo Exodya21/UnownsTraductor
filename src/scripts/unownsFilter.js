@@ -1,5 +1,5 @@
-import { unowns } from "./gif";
-import whitespace from "./asets/unown-whitespace.png";
+import { unowns } from "../dataBases/gif";
+import whitespace from "../asets/unown-whitespace.png";
 
 
 export function unownsFilter(query) {

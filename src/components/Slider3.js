@@ -1,5 +1,5 @@
-import './animations.css';
-import { unowns } from "./gif";
+import '../styles/animations.css';
+import { unowns } from "../dataBases/gif";
 
 
 export function Slider3() {

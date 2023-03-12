@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import './App.css';
+import './styles/App.css';
 import 'animate.css';
-import { unowns } from "./gif";
-import { Mesage } from './Mesage'
-import { Slider } from './Slider'
-import { Slider2 } from './Slider2';
-import { Slider3 } from './Slider3';
+import { unowns } from "./dataBases/gif";
+import { Mesage } from './components/Mesage'
+import { Slider } from './components/Slider'
+import { Slider2 } from './components/Slider2';
+import { Slider3 } from './components/Slider3';
 
 function App() {
 
