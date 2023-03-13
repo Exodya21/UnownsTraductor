@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import './styles/App.css';
 import 'animate.css';
-import { unowns } from "./dataBases/gif";
 import { Mesage } from './components/Mesage'
 import { Slider } from './components/Slider'
 import { Slider2 } from './components/Slider2';
 import { Slider3 } from './components/Slider3';
+import { AbcUnowns } from './components/AbcUnowns';
+import { Slider4 } from './components/Slider4';
 
 function App() {
 
@@ -20,7 +21,6 @@ function App() {
     setState(false)
   }
 
-  if (unowns.length === 29) unowns.pop()
 
   return (
     <div>
@@ -32,21 +32,12 @@ function App() {
           <Slider />
           <Slider2 />
           <Slider3 />
+          <Slider4 />
 
           <h1>¡Conoce a los Unowns!</h1>
           <section>
 
-            <div className='gifs' >
-              {
-                // eslint-disable-next-line array-callback-return
-                unowns?.map( unown => (
-                  <div key={unown.name} className='unown'>
-                    <p>Letra {unown.char}</p>
-                    <img src={unown.img} alt={unown.name}></img>
-                  </div>
-                ))
-              }
-            </div>
+            <AbcUnowns />
 
             <form onSubmit={onSubmit}>
               <h2>Escribe cualquier cosa con la ayuda de los Unowns</h2>
