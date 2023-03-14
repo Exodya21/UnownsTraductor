@@ -14,12 +14,13 @@ export function Slider2() {
     return (
         <div className='container-slider'> 
             <div className='slider2' >
-                <div>                    
+                <div>
                     <img className='slide' src={unowns[nums[0]].img} alt={[nums[0]].name}></img>
                 </div>
-                <div>                    
+                                    
+                <div>
                     <img className='slide' src={unowns[nums[1]].img} alt={[nums[1]].name}></img>
-                </div>
+                </div>      
             </div>
         </div>
     )

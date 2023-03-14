@@ -24,12 +24,15 @@
     z-index: -1;
 
     display: inline-flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: start;
     align-items: end;
 
+    width: 40%;
+    height: 100vh;
+
     animation: slider2 12s infinite linear;
-    width: 50%;
-    height: 50vh;
+
 }
 .slider3 {
     position: absolute;
@@ -90,6 +93,14 @@
     align-items: center;
 
 }
+/* .slider2 div {
+    display: flex;
+    flex-direction: row;
+
+   
+
+
+} */
 .slide4 {
     filter: blur(3px);
     scale: 0.9;
@@ -108,7 +119,7 @@
 
 @keyframes slider {
     0% {
-        transform: translateX(-25%);
+        transform: translateX(-30%);
         opacity: 0.1;
     }
     5% {
@@ -119,12 +130,15 @@
     }
 }
 @keyframes slider2 {
-    from {
-        transform: translate(-20%, 0%);
+    0% {
+        transform: translateX(0%);
+        opacity: 0.1;
     }
-    to {
-        transform: translate(100%, -195%);
-
+    5% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(100%, -100%);
     }
 }
 @keyframes slider3 {

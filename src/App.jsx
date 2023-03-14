@@ -14,7 +14,7 @@ function App() {
   const [query, setQuery] = useState("");
   const [state, setState] = useState(true);
   const [theresUnown, setTheresUnown] = useState(false);
-  const [css, setCss] = useState('')
+  const [css, setCss] = useState('animate__pulse animate__infinite infinite')
 
   const onSubmit = (e) => {
     e.preventDefault()
@@ -24,7 +24,14 @@ function App() {
     setState(false)
   }
 
+  const btnAnimation = () => {
+    setCss('animate__fadeOutUp')
+    setTimeout(() => {
+      setTheresUnown(true);
+    }, 2000);
+  }
 
+  // 
   return (
     <div>
     {
@@ -40,7 +47,7 @@ function App() {
             <section>
               <AbcUnowns />
 
-              <form onSubmit={onSubmit}>
+              <form onSubmit={onSubmit} className="animate__animated animate__fadeInRight">
                 <h2>¡Ahora puedes controlar a tú antojo a los Unowns!</h2>
                 <h3>Prueba a escribir cualquier cosa.</h3>
                 <textarea
@@ -57,12 +64,9 @@ function App() {
             <div className='btnFlauta'>
               <button 
                 id="btn_princ" 
-                onClick={()=> {
-                  setTheresUnown(true);
-                  setCss('animateBtn')}
-                } 
+                onClick={()=> btnAnimation() } 
                 className={
-                  css +" animate__animated animate__pulse animate__infinite	infinite"
+                   "animate__animated "+ css
                 }
               >
                 Tocar la flauta
