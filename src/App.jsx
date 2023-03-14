@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './styles/App.css';
 import 'animate.css';
 import { Mesage } from './components/Mesage'
@@ -8,13 +8,22 @@ import { Slider3 } from './components/Slider3';
 import { AbcUnowns } from './components/AbcUnowns';
 import { Slider4 } from './components/Slider4';
 import { Slider5 } from './components/Slider5';
+import { PlayerFlauta } from './components/PlayerFlauta';
+import { PlayerMusic } from './components/PlayerMusic';
+import { PlayerTraduccion } from './components/PlayerTraduccion';
 
 function App() {
 
   const [query, setQuery] = useState("");
   const [state, setState] = useState(true);
   const [theresUnown, setTheresUnown] = useState(false);
-  const [css, setCss] = useState('animate__pulse animate__infinite infinite')
+  // const audio = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+
+
+  // setTimeout(() => {
+  //   audio.play() 
+  // }, 1000);
+
 
   const onSubmit = (e) => {
     e.preventDefault()
@@ -24,14 +33,6 @@ function App() {
     setState(false)
   }
 
-  const btnAnimation = () => {
-    setCss('animate__fadeOutUp')
-    setTimeout(() => {
-      setTheresUnown(true);
-    }, 2000);
-  }
-
-  // 
   return (
     <div>
     {
@@ -57,12 +58,17 @@ function App() {
                   required
                 ></textarea>
                 <h4>Cuando estés listo vuelve a tocar la pokeflauta.</h4>
-                <button className="animate__animated animate__pulse animate__infinite	infinite" type='submit'>Tocar la flauta</button>
+                {/* <button className="animate__animated animate__pulse animate__infinite	infinite" type='submit'>Tocar la flauta</button> */}
+
+                <PlayerTraduccion 
+                  url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/flautaCelestial.mp3?alt=media&token=f9425d8c-db11-4778-8666-54b44d9f5865"}
+                  content={"Tocar la flauta"}
+                />
               </form>
             </section> 
             :
             <div className='btnFlauta'>
-              <button 
+              {/* <button 
                 id="btn_princ" 
                 onClick={()=> btnAnimation() } 
                 className={
@@ -70,7 +76,12 @@ function App() {
                 }
               >
                 Tocar la flauta
-              </button>
+              </button> */}
+              <PlayerFlauta 
+                url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/flautaCelestial.mp3?alt=media&token=f9425d8c-db11-4778-8666-54b44d9f5865"}
+                setTheresUnown={setTheresUnown}
+                content={"Tocar la flauta"}
+              />
             </div>
           }
 
@@ -83,6 +94,10 @@ function App() {
           <footer>
             <p>gif of Unown by </p>
             <a href="https://imgur.com/a/WXSvn#uD39I8E">imgur</a>
+            <PlayerMusic 
+              url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/musicaAmbiente.mp3?alt=media&token=e3b9eefe-e1e2-41df-94dc-3a741b85f013"}
+              content={"Musica de Ambiente:"}
+            />
           </footer>
         </div>
       </div>      

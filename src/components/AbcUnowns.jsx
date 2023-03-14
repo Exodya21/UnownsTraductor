@@ -1,6 +1,6 @@
 import { unowns } from "../dataBases/gif";
 import 'animate.css';
-import { animationABCwithDELAY, animationsABCWithOutDelay } from "../dataBases/gifAnimationCSS";
+import { animationsABCWithOutDelay } from "../dataBases/gifAnimationCSS";
 import { useState } from "react";
 
 export function AbcUnowns() {

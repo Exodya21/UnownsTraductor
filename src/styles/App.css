@@ -284,3 +284,16 @@ div[atrr=" "] {
   margin-bottom: 2rem;
   scale: 1.7;
 } 
+
+#playerMusic {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+
+  width: 5rem;
+
+  background-color: transparent;
+  border: none;
+
+  color: rgb(160, 160, 160);
+}

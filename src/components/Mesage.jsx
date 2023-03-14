@@ -13,13 +13,13 @@ export function Mesage( { setState, query } ) {
   }
 
   return (
-    <div className="containerRes">
-      <header > 
-        <button className="animate__animated animate__fadeIn" onClick={() => setState(true)} > back </button>
+    <div className="containerRes ">
+      <header className='animate__animated animate__fadeIn'> 
+        <button className="animate__animated animate__pulse animate__infinite	infinite" onClick={() => setState(true)} > back </button>
       </header>
       
-      <h2 >¡Te animo a que le hagas una screenshot o un video de esta traducción y la compartas!</h2>
-      <small>Para mejor visibilidad te recomiendo voltear tu smartphone. Y si estas en ordenador puedes hacer zoom para verlo mejor :D</small>
+      <h2 className='animate__animated animate__fadeIn' >¡Te animo a que le hagas una screenshot o un video de esta traducción y la compartas!</h2>
+      <small className='animate__animated animate__fadeIn' >Para mejor visibilidad te recomiendo voltear tu smartphone. Y si estas en ordenador puedes hacer zoom para verlo mejor :D</small>
 
       <div  className="animate__animated animate__fadeIn flexUnowns">
       {
