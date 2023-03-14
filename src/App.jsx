@@ -7,11 +7,14 @@ import { Slider2 } from './components/Slider2';
 import { Slider3 } from './components/Slider3';
 import { AbcUnowns } from './components/AbcUnowns';
 import { Slider4 } from './components/Slider4';
+import { Slider5 } from './components/Slider5';
 
 function App() {
 
   const [query, setQuery] = useState("");
   const [state, setState] = useState(true);
+  const [theresUnown, setTheresUnown] = useState(false);
+  const [css, setCss] = useState('')
 
   const onSubmit = (e) => {
     e.preventDefault()
@@ -28,28 +31,51 @@ function App() {
       state?
       <div className="container">
         <div className="containerFlex animate__animated animate__fadeIn">
+          <div>
+            <h1>¡Bienvenido a las Ruinas Sosiego!</h1>
+            <h3>Parece ser que posees una pokeflauta con forma de un Unown.</h3>
+          </div>
+          {
+          theresUnown?
+            <section>
+              <AbcUnowns />
+
+              <form onSubmit={onSubmit}>
+                <h2>¡Ahora puedes controlar a tú antojo a los Unowns!</h2>
+                <h3>Prueba a escribir cualquier cosa.</h3>
+                <textarea
+                  value={query}
+                  placeholder="Cualquier cosa ..."
+                  onChange={e => setQuery(e.target.value) }
+                  required
+                ></textarea>
+                <h4>Cuando estés listo vuelve a tocar la pokeflauta.</h4>
+                <button className="animate__animated animate__pulse animate__infinite	infinite" type='submit'>Tocar la flauta</button>
+              </form>
+            </section> 
+            :
+            <div className='btnFlauta'>
+              <button 
+                id="btn_princ" 
+                onClick={()=> {
+                  setTheresUnown(true);
+                  setCss('animateBtn')}
+                } 
+                className={
+                  css +" animate__animated animate__pulse animate__infinite	infinite"
+                }
+              >
+                Tocar la flauta
+              </button>
+            </div>
+          }
 
           <Slider />
           <Slider2 />
           <Slider3 />
           <Slider4 />
+          <Slider5 /> 
 
-          <h1>¡Conoce a los Unowns!</h1>
-          <section>
-
-            <AbcUnowns />
-
-            <form onSubmit={onSubmit}>
-              <h2>Escribe cualquier cosa con la ayuda de los Unowns</h2>
-              <textarea
-                value={query}
-                onChange={e => setQuery(e.target.value) }
-                required
-              ></textarea>
-              <button type='submit'>Traducir</button>
-            </form>
-
-          </section>
           <footer>
             <p>gif of Unown by </p>
             <a href="https://imgur.com/a/WXSvn#uD39I8E">imgur</a>

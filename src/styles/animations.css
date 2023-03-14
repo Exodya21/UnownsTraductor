@@ -1,7 +1,7 @@
 .container-slider {
     /* overflow-wrap: break-word; */
     width: 100%;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .slider {
@@ -10,11 +10,12 @@
     z-index: -1;
 
     display: inline-flex;
+    flex-direction: row;
     justify-content: end;
     /* -moz-animation: slider 5s infinite linear;
     -webkit-animation: slider 5s infinite linear; */
     animation: slider 15s infinite linear;
-    width: 90%;
+    width: 100%;
 }
 .slider2 {
     position: absolute;
@@ -25,8 +26,7 @@
     display: inline-flex;
     justify-content: flex-start;
     align-items: end;
-    /* -moz-animation: slider 5s infinite linear;
-    -webkit-animation: slider 5s infinite linear; */
+
     animation: slider2 12s infinite linear;
     width: 50%;
     height: 50vh;
@@ -40,8 +40,7 @@
     display: inline-flex;
     justify-content: end;
     align-items: end ;
-    /* -moz-animation: slider 5s infinite linear;
-    -webkit-animation: slider 5s infinite linear; */
+
     animation: slider3 20s infinite linear;
 
     width: 100%;
@@ -56,14 +55,27 @@
     display: inline-flex;
     justify-content: start;
     align-items: end ;
-    /* -moz-animation: slider 5s infinite linear;
-    -webkit-animation: slider 5s infinite linear; */
+
     animation: slider3 20s infinite linear;
     animation: turn 20s infinite linear;
 
 
     width: 600px;
     height: 600px;
+}
+
+.slider5 {
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+    z-index: -1;
+
+    display: inline-flex;
+    justify-content: start;
+    align-items: end ;
+
+    width: 40%;
+    height: 25vh;
 }
 
 
@@ -78,7 +90,6 @@
     align-items: center;
 
 }
-
 .slide4 {
     filter: blur(3px);
     scale: 0.9;
@@ -86,21 +97,30 @@
     justify-content: start;
     align-items: center;
     animation: turn 3s infinite linear;
+}
+.slide5 {
+    filter: blur(2px);
+    scale: 0.9;
 
+    animation: slider5 6s infinite alternate-reverse linear;
 }
 
 
 @keyframes slider {
-    from {
-        transform: translateX(9%);
+    0% {
+        transform: translateX(-25%);
+        opacity: 0.1;
     }
-    to {
-        transform: translateX(-105%);
+    5% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-125%);
     }
 }
 @keyframes slider2 {
     from {
-        transform: translate(0%, 0%);
+        transform: translate(-20%, 0%);
     }
     to {
         transform: translate(100%, -195%);
@@ -110,37 +130,13 @@
 @keyframes slider3 {
     0% {
         transform: translate(0%, 0%);
+        opacity: 0.1;
     }
-    /* 10% {
-        transform: translate( -10%, -20%);
+    5% {
+        opacity: 1;
     }
-    20% {
-        transform: translate( -20%, -40%);
-    }*/
-    /* 50% {
-        transform: rotate(-1turn);
-    } */
-    /* 40% {
-        transform: translate( -40%, -80%);
-    }
-    50% {
-        transform: translate( -50%, -100%);
-    }
-    60% {
-        transform: translate( -60%, -120%);
-    }
-    70% {
-        transform: translate( -70%, -140%);
-    }
-    80% {
-        transform: translate( -80%, -160%);
-    }
-    90% {
-        transform: translate( -90%, -180%);
-    } */
     100% {
         transform: translate( -100%, -200%);
-
     }
 }
 
@@ -153,31 +149,43 @@
     }
 }
 
-
+@keyframes slider5 {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(200%, -300%);
+    }
+    50% {
+        transform: translate(400%, 0%);
+    }
+    75% {
+        transform: translate(600%, -300%);
+    }
+    100% {
+        transform: translate(800%, 0%);
+    }
+}
 
 
 /* div[index = "1"] {
     border: 3px solid black;
 } */
 
-.animate__animated.animate__fadeInTopLeft,
-{
-    --animate-delay: 2.9s;
-}
-
 .animate__animated.animate__fadeInDownBig {
     --animate-delay: 0.3s;
 }
 .animate__animated.animate__fadeInTopRight,
 .animate__animated.animate__fadeInBottomLeft,
-.animate__animated.animate__fadeInRightBig {
+.animate__animated.animate__fadeInRight,
+.animate__animated.animate__fadeInLeftBig {
     --animate-delay: 2.3s;
 }
-.animate__animated.animate__fadeInBottomRight,
-.animate__animated.animate__fadeInLeftBig {
+.animate__animated.animate__fadeInTopLeft,
+.animate__animated.animate__fadeInBottomRight {
     --animate-delay: 3.3s;
 }
-.animate__animated.animate__fadeInUpBig {
+.animate__animated.animate__fadeInUp {
     --animate-delay: 0.3s;
 }
 
