@@ -62,7 +62,7 @@ function App() {
 
                 <PlayerTraduccion 
                   url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/flautaCelestial1rep.mp3?alt=media&token=d3ac385a-18f9-44f8-9166-e434cc488ddb"}
-                  content={"Tocar la flauta"}
+                  content={"Tocar la pokeflauta"}
                 />
               </form>
             </section> 
@@ -80,7 +80,7 @@ function App() {
               <PlayerFlauta 
                 url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/flautaCelestial1rep.mp3?alt=media&token=d3ac385a-18f9-44f8-9166-e434cc488ddb"}
                 setTheresUnown={setTheresUnown}
-                content={"Tocar la flauta"}
+                content={"Tocar la pokeflauta"}
               />
             </div>
           }
