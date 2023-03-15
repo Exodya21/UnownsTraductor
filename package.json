@@ -1,8 +1,8 @@
 {
+  "homepage": "https://exodya21.github.io/unownstraductor",
   "name": "unowns-traductor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Exodya21.github.io/UnownsTraductor",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
