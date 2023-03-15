@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UnownsTraductor/static/css/main.7d7016c1.css",
-    "main.js": "/UnownsTraductor/static/js/main.870130dd.js",
+    "main.js": "/UnownsTraductor/static/js/main.f21b9bb9.js",
     "static/media/ruina-bg.png": "/UnownsTraductor/static/media/ruina-bg.b7c61b502b45334833ed.png",
     "static/media/unown-o.gif": "/UnownsTraductor/static/media/unown-o.a54d1970295bc1c66215.gif",
     "static/media/unown-h.gif": "/UnownsTraductor/static/media/unown-h.693f658035f6d3b1f833.gif",
@@ -33,10 +33,10 @@
     "static/media/unown-exclamation.gif": "/UnownsTraductor/static/media/unown-exclamation.d914190e2f75b5a9bb87.gif",
     "index.html": "/UnownsTraductor/index.html",
     "main.7d7016c1.css.map": "/UnownsTraductor/static/css/main.7d7016c1.css.map",
-    "main.870130dd.js.map": "/UnownsTraductor/static/js/main.870130dd.js.map"
+    "main.f21b9bb9.js.map": "/UnownsTraductor/static/js/main.f21b9bb9.js.map"
   },
   "entrypoints": [
     "static/css/main.7d7016c1.css",
-    "static/js/main.870130dd.js"
+    "static/js/main.f21b9bb9.js"
   ]
 }
