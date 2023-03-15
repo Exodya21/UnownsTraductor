@@ -1,7 +1,6 @@
 import { useAudio } from "../scripts/useAudio";
 import '../styles/App.css';
 import 'animate.css';
-import { useState } from "react";
 
 export const PlayerTraduccion = ({ url, content }) => {
     const [playing, toggle] = useAudio(url, "0.05", false);
