@@ -61,7 +61,7 @@ function App() {
                 {/* <button className="animate__animated animate__pulse animate__infinite	infinite" type='submit'>Tocar la flauta</button> */}
 
                 <PlayerTraduccion 
-                  url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/flautaCelestial.mp3?alt=media&token=f9425d8c-db11-4778-8666-54b44d9f5865"}
+                  url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/flautaCelestial1rep.mp3?alt=media&token=d3ac385a-18f9-44f8-9166-e434cc488ddb"}
                   content={"Tocar la flauta"}
                 />
               </form>
@@ -78,7 +78,7 @@ function App() {
                 Tocar la flauta
               </button> */}
               <PlayerFlauta 
-                url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/flautaCelestial.mp3?alt=media&token=f9425d8c-db11-4778-8666-54b44d9f5865"}
+                url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/flautaCelestial1rep.mp3?alt=media&token=d3ac385a-18f9-44f8-9166-e434cc488ddb"}
                 setTheresUnown={setTheresUnown}
                 content={"Tocar la flauta"}
               />
@@ -95,7 +95,7 @@ function App() {
             <p>gif of Unown by </p>
             <a href="https://imgur.com/a/WXSvn#uD39I8E">imgur</a>
             <PlayerMusic 
-              url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/musicaAmbiente.mp3?alt=media&token=e3b9eefe-e1e2-41df-94dc-3a741b85f013"}
+              url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/musicaAmbienteRecord.mp3?alt=media&token=c5353215-ef2c-43bb-9425-533143b80bcb"}
               content={"Musica de Ambiente:"}
             />
           </footer>
