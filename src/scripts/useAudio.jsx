@@ -11,7 +11,7 @@ export const useAudio = (url, volume, loop) => {
 
     useEffect(() => {
         playing ? audio.play() : audio.pause();
-    }, [audio, playing] );
+    }, [playing] );
 
     useEffect(() => {
         audio.addEventListener('ended', () => setPlaying(false));
