@@ -3,7 +3,7 @@ import '../styles/App.css';
 import 'animate.css';
 
 export const PlayerTraduccion = ({ url, content }) => {
-    const [ toggle] = useAudio(url, "0.05", false);
+    const [playing, toggle] = useAudio(url, "0.05", false);
 
     return (
         <div>

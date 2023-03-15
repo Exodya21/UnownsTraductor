@@ -4,7 +4,7 @@ import 'animate.css';
 import { useState } from "react";
 
 export const PlayerFlauta = ({ url, content, setTheresUnown }) => {
-    const [ toggle] = useAudio(url, "0.05", false);
+    const [ playing, toggle] = useAudio(url, "0.05", false);
     const [css, setCss] = useState('animate__pulse animate__infinite infinite')
 
 
