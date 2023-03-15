@@ -20,5 +20,5 @@ export const useAudio = (url, volume, loop) => {
         };
     }, []);
 
-    return [playing, toggle];
+    return [playing, toggle, setPlaying];
 };
