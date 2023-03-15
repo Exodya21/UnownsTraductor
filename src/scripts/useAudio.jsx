@@ -6,12 +6,12 @@ export const useAudio = (url, volume, loop) => {
 
     const toggle = () => setPlaying(!playing);
 
-    audio.volume = "0.05";
+    audio.volume = volume;
     audio.loop = loop;
 
     useEffect(() => {
         playing ? audio.play() : audio.pause();
-    }, [playing] );
+    }, [audio, playing] );
 
     useEffect(() => {
         audio.addEventListener('ended', () => setPlaying(false));
