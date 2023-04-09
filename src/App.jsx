@@ -39,17 +39,20 @@ function App() {
       state?
       <div className="container">
         <div className="containerFlex animate__animated animate__fadeIn">
-          <div>
+          <div className='titles'>
             <h1>¡Bienvenido a las Ruinas Sosiego!</h1>
-            <h3>Parece ser que posees una pokeflauta con forma de un Unown.</h3>
+            {
+              theresUnown?
+                <h3>¡Ahora puedes controlar a tú antojo a los Unowns!</h3>
+                :
+                <h3>Parece ser que posees una pokeflauta con forma de un Unown.</h3>
+            }
           </div>
           {
           theresUnown?
             <section>
-              <AbcUnowns />
-
               <form onSubmit={onSubmit} className="animate__animated animate__fadeInRight">
-                <h2>¡Ahora puedes controlar a tú antojo a los Unowns!</h2>
+                {/* <h2>¡Ahora puedes controlar a tú antojo a los Unowns!</h2> */}
                 <h3>Prueba a escribir cualquier cosa.</h3>
                 <textarea
                   value={query}
@@ -65,6 +68,8 @@ function App() {
                   content={"Tocar la pokeflauta"}
                 />
               </form>
+
+              <AbcUnowns />
             </section> 
             :
             <div className='btnFlauta'>
@@ -89,15 +94,20 @@ function App() {
           <Slider2 />
           <Slider3 />
           <Slider4 />
-          <Slider5 /> 
+          <Slider5 />  
 
           <footer>
             <p>gif of Unown by </p>
             <a href="https://imgur.com/a/WXSvn#uD39I8E">imgur</a>
-            <PlayerMusic 
-              url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/musicaAmbienteRecord.mp3?alt=media&token=c5353215-ef2c-43bb-9425-533143b80bcb"}
-              content={"Musica de Ambiente:"}
-            />
+            {
+              theresUnown?
+                <div></div>
+                :
+                <PlayerMusic 
+                  url={"https://firebasestorage.googleapis.com/v0/b/db-portfolio-angular.appspot.com/o/musicaAmbienteRecord.mp3?alt=media&token=c5353215-ef2c-43bb-9425-533143b80bcb"}
+                  content={"Musica de Ambiente:"}
+                />
+            }
           </footer>
         </div>
       </div>      

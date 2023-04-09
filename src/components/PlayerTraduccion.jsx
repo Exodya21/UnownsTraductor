@@ -7,7 +7,7 @@ export const PlayerTraduccion = ({ url, content }) => {
 
     return (
         <div>
-            <button id="btn_princ" type="submit" className="animate__animated animate__pulse animate__infinite	infinite" onClick={toggle} >
+            <button id="btn_second" type="submit" className="animate__animated animate__pulse animate__infinite	infinite" onClick={toggle} >
                 { content }
             </button>
         </div>

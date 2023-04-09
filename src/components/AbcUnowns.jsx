@@ -16,7 +16,7 @@ export function AbcUnowns() {
             {
             unowns?.map( (unown, index) => (
                 <div key={unown.name} index={index} className="unown">
-                    <div id="u" className={animations[index]}>
+                    <div className={animations[index]}>
                         <p>Letra {unown.char}</p>
                         <img src={unown.img} alt={unown.name}></img>
                     </div>

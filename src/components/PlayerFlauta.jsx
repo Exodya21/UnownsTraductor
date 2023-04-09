@@ -20,10 +20,8 @@ export const PlayerFlauta = ({ url, content, setTheresUnown }) => {
     }
 
     return (
-        <div>
-            <button id="btn_princ" className={ "animate__animated "+css } onClick={actions} >
-                { content }
-         </button>
-        </div>
+        <button id="btn_princ" className={ "animate__animated "+css } onClick={actions} >
+            { content }
+        </button>
     );
 }
