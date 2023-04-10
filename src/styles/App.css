@@ -190,6 +190,8 @@ footer p {
   top: 1rem;
   left: 1rem;
   width: 100%;
+
+  z-index: 1000;
 }
 
 .containerRes header button{
@@ -268,7 +270,17 @@ div[atrr=" "] {
 
 }
 
+@media (orientation: landscape) and (min-height:280px) {
+  #btn_princ {
+    margin-top: 1rem!important;
+  }
+}
 
+@media (orientation: landscape) and (min-height:414px) {
+  #btn_princ {
+    margin-top: 3.5rem!important;
+  }
+}
 
 @media (min-width:320px) {
   .titles {
