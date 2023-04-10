@@ -9,7 +9,7 @@ export function AbcUnowns() {
 
     if (unowns.length === 29) unowns.pop()
 
-    console.log(animations);
+    // console.log(animations);
 
     return (
         <div className='gifs' >

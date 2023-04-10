@@ -22,7 +22,7 @@ export function security(query) {
     let queryToArray = query.split("");
     let queryValidated = "";
 
-    queryToArray.map( char => {
+    queryToArray.forEach( char => {
         if ( validations.includes(char) ) // ? console.log(true, char) : console.log(false, char)
             queryValidated += char
     })
